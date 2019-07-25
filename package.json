@@ -1,0 +1,31 @@
+{
+  "name": "mmall-fe",
+  "version": "1.0.0",
+  "description": "mmall前端代码",
+  "main": "index.js",
+  "scripts": {
+    "dev_win" : "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
+    "dist_win" : "set WEBPACK_ENV=online && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilentJhin/mmall-fe.git"
+  },
+  "author": "Jhin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilentJhin/mmall-fe/issues"
+  },
+  "homepage": "https://github.com/SilentJhin/mmall-fe#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^3.1.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^4.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^0.5.8",
+    "webpack-dev-server": "^1.16.5"
+  }
+}

@@ -1,0 +1,35 @@
+/*
+* @Author: Jhin
+* @Date:   2019-07-29 17:25:44
+* @Last Modified by:   Jhin
+* @Last Modified time: 2019-07-29 17:53:10
+*/
+/*通用头部导航*/
+.header .logo{
+    /*图标和(搜索栏,搜索按钮)是左右布局，有两种方式，使用第二种方式:图标次要，搜索栏和按钮主要
+    1 都左浮动，然后清除浮动
+    2 一个设主要，一个设次要 主要用来占位 次要绝对定位*/
+    position: absolute;
+    left: 60px;
+    top: 34px;
+    display: block;
+    font-size: 36px;
+    color: #c60023;
+    font-weight: bold;
+}
+.header .search-con{
+    padding: 40px 0 30px 250px;
+}
+.header .search-con .search-input{
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid #c60023;
+}
+.header .search-con .search-btn{
+    position: absolute;
+    height: 44px;
+    width: 80px;
+}

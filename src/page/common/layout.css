@@ -1,0 +1,96 @@
+/*
+* @Author: Jhin
+* @Date:   2019-07-28 18:53:10
+* @Last Modified by:   Jhin
+* @Last Modified time: 2019-07-29 17:48:33
+*/
+
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f6f6f6;
+    font: 12px/1.5 tahoma, arial, Microsoft YaHei, sans-serif; /* 行间距1.5 */
+}
+li{
+    list-style: none; /* 去掉列表前的圆点 */
+}
+img{
+    display: block;
+    border:none;
+}
+label{
+    cursor: pointer;
+}
+input[type='checkbox']{ /* 选择器：input标签中type为checkbox */
+    cursor: pointer;
+}
+a {
+    text-decoration: none; /*去除下划线*/
+}
+input {
+    /*清除文本框点击后的蓝色边框*/
+    outline:none;
+}
+
+/* 定宽布局 */
+.w{
+    width: 1080px;
+    margin: 0 auto; /* 水平居中 */
+    position: relative;
+    overflow: hidden; /*清除浮动 解决因为子元素浮动而导致父元素高度为0的问题*/
+}
+/* 全局通用样式 */
+/* 隐藏类 */
+.hide{
+    display: none; 
+}
+/*超链样式*/
+.link{
+    color: #999; /* 三个数为渐变 000(黑) <--> fff(白) */
+    cursor: pointer;
+    text-decoration: none; /*去除下划线*/
+}
+.link:hover{
+    color: #e80012;
+}
+.link-text{ /*长得像超链但不是超链*/
+    color: #999;
+    text-decoration: none;
+}
+
+/*btn*/
+.btn{
+    display: inline-block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: none;
+    background-color: #c60023;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-mini{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+}
+/*loading*/
+.loading {
+    margin: 10px auto;
+    display: block;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: url(../../image/icon/loading.gif) no-repeat;
+    opacity: .6; /*半透明*/
+}

@@ -1,0 +1,31 @@
+/*
+* @Author: Jhin
+* @Date:   2019-07-29 15:14:20
+* @Last Modified by:   Jhin
+* @Last Modified time: 2019-07-29 15:22:55
+*/
+/*导航条*/
+.nav{
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+/*左 用户部分*/
+.nav .user{
+    float: left;
+}
+/*.user和.login之间没有空格 表示选择的是同时属于user和login类的元素*/
+.nav .user.login{
+    display: none;
+}
+.nav .user .link{
+    margin-right: 5px;
+}
+/*右 导航链接部分*/
+.nav .nav-list{
+    float: right;
+}
+.nav .nav-list .nav-item{
+    display: inline-block;
+    margin-left: 5px;
+}

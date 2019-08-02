@@ -2,7 +2,7 @@
 * @Author: Jhin
 * @Date:   2019-07-29 15:14:09
 * @Last Modified by:   Jhin
-* @Last Modified time: 2019-07-30 13:39:58
+* @Last Modified time: 2019-08-02 12:13:44
 */
 
 // 导航条 逻辑：1 登录注册/欢迎退出的切换  2 购物车数量
@@ -25,7 +25,7 @@ var nav = {
         });
         // 注册点击事件
         $('.js-register').click(function(){
-            window.location.href = './register.html';
+            window.location.href = './user-register.html';
         });
         // 退出点击事件
         $('.js-logout').click(function(){

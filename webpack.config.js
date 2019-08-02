@@ -2,7 +2,7 @@
 * @Author: Jhin
 * @Date:   2019-07-25 12:59:41
 * @Last Modified by:   Jhin
-* @Last Modified time: 2019-07-30 17:40:40
+* @Last Modified time: 2019-08-02 20:56:30
 */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -38,7 +38,12 @@ var config = {
     entry: {
         'common' : ['./src/page/common/index.js'],
         'index' : ['./src/page/index/index.js'],
-        'login' : ['./src/page/login/index.js'],
+        'user-login' : ['./src/page/user-login/index.js'],
+        'user-register' : ['./src/page/user-register/index.js'],
+        'user-pass-reset' : ['./src/page/user-pass-reset/index.js'],
+        'user-center' : ['./src/page/user-center/index.js'],
+        'user-center-update' : ['./src/page/user-center-update/index.js'],
+        'user-pass-update' : ['./src/page/user-pass-update/index.js'],
         'result' : ['./src/page/result/index.js']
     },
     // 目标文件
@@ -83,7 +88,12 @@ var config = {
         new ExtractTextPlugin("css/[name].css"),
         // html模板
         new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
-        new HtmlWebpackPlugin(getHtmlConfig('login', '用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-register', '用户注册')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset', '找回密码')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center', '个人中心')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center-update', '修改个人信息')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update', '修改密码')),
         new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),
 
         // new CleanWebpackPlugin(),
@@ -99,6 +109,9 @@ var config = {
     //         }
     //     }
     // },
+    devServer: {
+        disableHostCheck: true
+    },
 };
 // webpack-dev-server 前端开发服务器 启动后在文件改变时自动刷新服务器
 // 这样在谷歌浏览器里调试时就不用按crtl+R手动刷新啦

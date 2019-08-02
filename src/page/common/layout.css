@@ -2,7 +2,7 @@
 * @Author: Jhin
 * @Date:   2019-07-28 18:53:10
 * @Last Modified by:   Jhin
-* @Last Modified time: 2019-07-29 17:48:33
+* @Last Modified time: 2019-08-02 16:53:23
 */
 
 /*css reset*/
@@ -41,6 +41,23 @@ input {
     margin: 0 auto; /* 水平居中 */
     position: relative;
     overflow: hidden; /*清除浮动 解决因为子元素浮动而导致父元素高度为0的问题*/
+}
+/*panel*/
+.panel{
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.panel .panel-title{
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+    padding: 10px;
+    overflow: hidden;
 }
 /* 全局通用样式 */
 /* 隐藏类 */

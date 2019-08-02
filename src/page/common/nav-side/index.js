@@ -2,7 +2,7 @@
 * @Author: Jhin
 * @Date:   2019-07-30 12:49:45
 * @Last Modified by:   Jhin
-* @Last Modified time: 2019-07-30 13:43:41
+* @Last Modified time: 2019-08-02 21:08:47
 */
 // 侧边导航 逻辑：渲染
 require('./index.css');
@@ -15,7 +15,7 @@ var navSide = {
         navList : [
             {name : 'user-center', desc : '个人中心', href : './user-center.html'},
             {name : 'order-list', desc : '我的订单', href : './order-list.html'},
-            {name : 'pass-update', desc : '修改密码', href : './pass-update.html'},
+            {name : 'user-pass-update', desc : '修改密码', href : './user-pass-update.html'},
             {name : 'about', desc : '关于MMall', href : './about.html'}
         ]
     },

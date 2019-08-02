@@ -2,7 +2,7 @@
 * @Author: Jhin
 * @Date:   2019-07-25 21:29:53
 * @Last Modified by:   Jhin
-* @Last Modified time: 2019-07-29 18:02:03
+* @Last Modified time: 2019-08-02 20:50:06
 */
 
 // 网络请求
@@ -61,7 +61,7 @@ var _mm = {
         alert(msg || '操作成功');
     },
     // 错误提示
-    successTips : function(msg){
+    errorTips : function(msg){
         alert(msg || '操作失败');
     },
     // 字段的验证，支持非空、手机、邮箱的判断
@@ -70,7 +70,7 @@ var _mm = {
         var value = $.trim(value);
         // 非空验证
         if('require' === type){
-            // value 强转布尔 有值为true 空为false
+            // ！！value 强转布尔 有值为true 空为false
             return !!value;
         }
         // 手机号验证
@@ -84,7 +84,7 @@ var _mm = {
     },
     // 统一登录处理
     doLogin : function(){
-        window.location.href = './login.html?redirect=' + 
+        window.location.href = './user-login.html?redirect=' + 
             encodeURIComponent(window.location.href);
     },
     goHome : function(){

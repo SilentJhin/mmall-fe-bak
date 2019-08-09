@@ -2,7 +2,7 @@
 * @Author: Jhin
 * @Date:   2019-07-29 17:25:52
 * @Last Modified by:   Jhin
-* @Last Modified time: 2019-07-29 18:21:28
+* @Last Modified time: 2019-08-09 14:07:32
 */
 
 // header逻辑：
@@ -14,8 +14,9 @@ var _mm = require('util/mm.js');
 var header = {
     init : function(){
         this.bindEvent();
+        this.onLoad();
     },
-    OnLoad : function(){
+    onLoad : function(){
         var keyword = _mm.getUrlParam('keyword');
         if(keyword){
             // #search-input:搜索框ID
@@ -38,6 +39,8 @@ var header = {
         });
     },
     // 搜索提交
+    // 问题： 在主页http://test:8088/dist/view/index.html 输入关键字，单击搜索后
+    // 问题解决了？
     searchSubmit : function(){
         var keyword = $.trim($('#search-input').val());
         // 提交时keyword有值就正常跳转到list页面，没有值就跳转到home页

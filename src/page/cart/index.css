@@ -1,0 +1,141 @@
+/*
+* @Author: Jhin
+* @Date:   2019-08-10 12:13:42
+* @Last Modified by:   Jhin
+* @Last Modified time: 2019-08-10 14:07:24
+*/
+
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin-bottom: 10px;
+}
+/*header*/
+.cart-header{
+    background: #eee;
+}
+/*表头及表字段: 全选*/
+.cart-header .cart-cell{
+    height: 40px;
+    line-height: 40px;
+}
+.cart-table .cell-check{
+    width: 6%;
+    text-align: left;
+    padding-left: 20px;
+}
+/*表头及表字段: 图片框*/
+.cart-table .cell-img{
+    width: 10%;
+    text-align: left;
+}
+/*表头及表字段: 图片*/
+.cart-table .cell-img .p-img{
+    margin: 10px 0;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+/*表头及表字段: 图片信息*/
+.cart-table .cell-info{
+    width: 35%;
+    text-align: left;
+}
+.cart-header .cell-info{
+    width: 45%;
+    padding-left: 106px;
+}
+/*表头及表字段: 价格*/
+.cart-table .cell-price{
+    width: 10%;
+    text-align: center;
+}
+/*表头及表字段: 数量*/
+.cart-table .cell-count{
+    width: 15%;
+    text-align: center;
+}
+/*表头及表字段: 数量文本框*/
+.cart-table .cell-count .count-input{
+    width: 60px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+    color: #333;
+}
+/*表头及表字段: 数量加减号*/
+.cart-table .cell-count .count-btn{
+    display: inline-block;
+    width: 20px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #fff;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+/*表头及表字段: 合计*/
+.cart-table .cell-total{
+    width: 14%;
+    text-align: center;
+    font-weight: bold;
+}
+/*表头及表字段: 操作*/
+.cart-table .cell-opera{
+    width: 10%;
+    text-align: center;
+}
+/*footer*/
+.cart-footer{
+    position: relative;
+    line-height: 50px;
+    background: #eee;
+    overflow: hidden;
+}
+/*footer: 全选全选*/
+.cart-footer .select-con{
+    float: left;
+    padding-left: 20px;
+}
+/*footer: 删除全选*/
+.cart-footer .delete-con{
+    float: left;
+    margin-left: 20px;
+}
+/*footer: 总价，去结算按钮*/
+.cart-footer .submit-con{
+    float: right;
+}
+/*footer: 总价*/
+.cart-footer .submit-con .submit-total{
+    font-size: 18px;
+    color: #c60023;
+    font-weight: bold;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+/*footer: 去结算按钮*/
+.cart-footer .submit-con .btn-submit{
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/*错误信息*/
+.err-tip{
+    height: 60px;
+    line-height: 60px;
+    color: #f60;
+    font-size: 16px;
+    text-align: center;
+    background: #eee;
+}

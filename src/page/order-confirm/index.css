@@ -1,0 +1,224 @@
+/*
+* @Author: Jhin
+* @Date:   2019-08-11 12:26:33
+* @Last Modified by:   Jhin
+* @Last Modified time: 2019-08-11 21:18:29
+*/
+
+/*地址部分*/
+
+/*收货地址容器*/
+.address-item,
+.address-add{
+    margin: 20px 20px 0 0;
+    width: 200px;
+    padding: 5px 8px;
+    float: left;
+    border: 3px dashed #ccc; /*dashed 虚线*/
+    cursor: pointer;
+}
+.address-item.active{
+    border: 3px dashed #c60023;
+}
+.address-item:hover,
+.address-add:hover{
+    background: #fafafa;
+}
+/*收货地址容器 标题*/
+.address-item .address-title{
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+/*收货地址容器 详细信息*/
+.address-item .address-detail{
+    margin-top: 5px;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    color: #666;
+}
+/*收货地址容器 操作容器*/
+.address-item .address-opera{
+    text-align: right;
+    visibility: hidden;
+    /*display&visibility: 
+    display: hidden;        元素不占位
+    visibility: hidden;     元素占位*/
+}
+/*编辑删除默认不显示 有光标时才显示*/
+.address-item:hover .address-opera{
+    visibility: visible;
+}
+/*收货地址容器 操作链接*/
+.address-item .address-opera .link{
+    margin-right: 5px;
+}
+
+/*添加收货地址*/
+.address-add .address-new{
+    padding: 8px 0;
+    text-align: center;
+    color: #ccc;
+    font-size: 12px;
+}
+/*添加收货地址 图标*/
+.address-add .address-new .fa{
+    font-size: 50px;
+    line-height: 50px;
+}
+/*添加收货地址 使用新地址*/
+.address-add .address-new .text{
+    font-size: 13px;
+}
+
+/*商品清单*/
+/*商品清单 容器*/
+.product-table{
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;/*修改边框样式，相邻边框合并*/
+}
+.product-table th,
+.product-table td{
+    border-bottom: 1px dotted #ddd; /*dotted 点状*/
+}
+/*商品清单 图片框*/
+.product-table .cell-img{
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
+/*商品清单 图片*/
+.product-table .cell-img .p-img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+}
+/*商品清单 详细信息*/
+.product-table .cell-info{
+    width: 30%;
+    text-align: left;
+}
+/*商品清单 价格*/
+.product-table .cell-price{
+    width: 20%;
+    text-align: center;
+}
+/*商品清单 数量*/
+.product-table .cell-count{
+    width: 20%;
+    text-align: center;
+}
+/*商品清单 总价*/
+.product-table .cell-total{
+    width: 20%;
+    text-align: center;
+}
+
+/*订单提交*/
+/*订单提交容器*/
+.submit-con{
+    background: #eee;
+    text-align: right;
+}
+/*订单提交 价格*/
+.submit-con .submit-total{
+    margin-right: 20px;
+    font-size: 18px;
+    color: #c60023;
+    font-weight: bold;
+    vertical-align: middle;
+}
+/*订单提交 按钮*/
+.submit-con .order-submit{
+    height: 50px;
+    line-height: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+/*添加地址窗口*/
+.model{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee; /*低版本浏览器支持*/
+    background: rgba(0,0,0,.4); /*高级版本浏览器会覆盖掉#eee*/
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/*添加地址容器*/
+.model .model-container{
+   width: 700px;
+   margin: 50px auto;
+   background: #fff;
+   border-radius: 2px; 
+}
+/*添加地址头部*/
+.model .model-container .model-header{
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+/*添加地址头部:标题*/
+.model .model-container .model-header .model-title{
+    font-size: 14px;
+}
+/*添加地址头部:叉号*/
+.model .model-container .model-header .close{
+    position: absolute;
+    padding: 10px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/*添加地址 内容*/
+.model .model-container .model-body{
+    padding: 15px;
+}
+/*form部分*/
+/*添加地址 内容 伪表 行*/
+.form .form-line{
+    margin: 5px 0;
+    overflow: hidden;
+}
+/*添加地址 内容 伪表 行 属性*/
+.form .form-line .label{
+    display: block;
+    float: left;
+    width: 80px;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.form .form-line .label .required{
+    color: red;
+}
+/*添加地址 内容 伪表 行 值*/
+.form .form-line .form-item{
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    margin-right: 10px;
+}
+/*添加地址 内容 保存按钮*/
+.form .form-line .btn{
+    margin-top: 5px;
+    margin-left: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+

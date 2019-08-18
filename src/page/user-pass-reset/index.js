@@ -2,16 +2,12 @@
 * @Author: Jhin
 * @Date:   2019-08-02 12:16:27
 * @Last Modified by:   Jhin
-* @Last Modified time: 2019-08-02 16:18:46
+* @Last Modified time: 2019-08-18 11:58:21
 */
 require('./index.css');
 require('page/common/nav-simple/index.js');
 var _mm = require('util/mm.js');
 var _user = require('service/user-service.js');
-
-// 忘记密码的重置密码逻辑：
-// 首先加载页面1（一个函数显示输入用户名框，把这个函数放在onload里）；用户输入用户名并点击下一步后调用service里方法获取用户提示密码问题，并加载页面2（隐藏一些错误提示和用户名框，显示获取的用户提示密码问题和输入密码提示问题答案框），用户在输入答案后点击下一步调用service里方法checkAnswer进行验证，确认正确后返回有有效时间的Token，显示页面3，用户在输入新密码并点击按钮提交后调用resetPassword验证Token，没问题就持久化新密码
-
 
 // 表单里错误提示
 var formError = {
@@ -88,7 +84,7 @@ var page = {
             if(password && password.length >= 6){
                 _user.resetPassword({
                     username : _this.data.username,
-                    passpordNew : password,
+                    passwordNew : password,
                     forgetToken : _this.data.token
                 }, function(res){
                     window.location.href = './result.html?type=pass-reset';

@@ -17,22 +17,20 @@
             </div>
         </div>
     </div>
+
     <div class="page-wrap w">
-        <ul class="sort-con">
-            <li class="sort-item active" data-type="default">默认排序</li>
-            <li class="sort-item" data-type="price">
-                <span>价格</span>
-                <i class="fa fa-sort-asc"></i>
-                <i class="fa fa-sort-desc"></i>
-            </li>
-        </ul>
-        <!-- list 容器 -->
-        <ul class="p-list-con">
-            
-        </ul>
-        <!-- 分页容器 -->
-        <div class="pagination"></div>
+        <%= require('html-loader!./layout/nav-side.html') %>
+        <div class="content with-nav">
+            <div class="panel">
+                <h1 class="panel-title"></h1>
+                <div class="panel-body">
+                    欢迎访问我搭建的电商Demo,更多详细信息请访问我的博客：
+                    <a href="https://blog.csdn.net/iRico1/article/details/97812637" class="link" target="_blank" style="color: #c60023">我的博客链接>></a>
+                </div>
+            </div>
+        </div>
     </div>
+    
     <%= require('html-loader!./layout/footer.html') %>
 </body>
 </html>
